@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ella Rappel</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <style>
+            body {
+                background: linear-gradient(white, darkgray);
+                position: relative;
+            }
+            h1 {
+                background-color: lightblue;
+            }
+            img {
+                background-color: gray;
+            }
+            h3 {
+                background-color: lightyellow;
+            }
+            button {
+                background-color: lavender;
+            }
+            .carousel-inner img {
+              width: 100%;
+              height: 100%;
+            }
+        </style>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#section1">Buttons/Jumbotron</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">Nav Bar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Thumbnails</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section4">All About Pugs Collapsable</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#section5">Image Carousel</a>
+            </li>
+          </ul>
+        </nav>
+    <br><br>
+        <div class="container-fluid" style="background-color:gray; padding-top:40px;padding-bottom:30px" id="section1">
+        <div class="container" style="background-color:gray;">
+        <center>
+            <button type="button"><a href="https://en.wikipedia.org/wiki/Pug" data-toggle="tooltip" data-placement="bottom" title="Click here for the pug Wikipedia page!">Wikipedia</a></button>
+            <button type="button"><a href="http://www.vetstreet.com/dogs/pug" data-toggle="tooltip" data-placement="bottom" title="Click here for the pug info page on vetstreet.com!">Vetstreet.com</a></button>
+            <button type="button"><a href="http://dogtime.com/dog-breeds/pug#/slide/1" data-toggle="tooltip" data-placement="bottom" title="Click here for the pug info page on dogtime.com!">Dogtime.com</a></button>
+        </center>
+        </div>
+        <script>
+            /*global$*/(document).ready(function(){
+            /*global$*/('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>
+        <div class="jumbotron text-center" style="background-color:gray;">
+            <div class="container" style="background-color:pink;">
+              <center><h1>
+                  Pug
+              <small class="text-muted">(Canis lupus familiaris)</small>
+              </h1></center>
+            </div>
+        </div>
+        </div>
+        <br>
+        <center><h3>Nav Bar - Websites by E. Rappel</h3></center>
+        <br>
+        <div class="container" style="background-color:pink; padding-top:30px;padding-bottom:30px" id="section2">
+            <center>
+            <nav class="navbar navbar-expand-sm">
+                <ul class="nav justify-content-center" style="background-color:lightblue; margin: auto;">
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://earappel.github.io/ecs41718/HTML/practice1.html">practice1.html</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://earappel.github.io/ecs41718/HTML/table1.html">table1.html</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://earappel.github.io/ecs41718/HTML/FavoriteAnimal.html">FavoriteAnimal.html</a>
+                    </li>
+                </ul>
+            </nav>
+            </center>
+        </div>
+        <br>
+        <center><h3>Thumbnails</h3></center>
+        <br>
+        <div class="container" style="background-color:pink; padding-top:70px;padding-bottom:50px" id="section3">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="https://vetstreet.brightspotcdn.com/dims4/default/9d51a10/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F24%2F697af0a7fa11e0a0d50050568d634f%2Ffile%2FPug-2-645mk062811.jpg" alt="Pug Dog" style="width:100%;"></div>
+                        <div class="caption">
+                            <p>Wherever the pug goes, its wrinkly face and fun personality charm people. (vetstreet.com)</p>
+                        </div>
+                    </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="https://vetstreet.brightspotcdn.com/dims4/default/65bbc05/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2Fc1%2Ff9%2F13fe778446f1b8a4fcbe7146e4a4%2FAP-TVQEZK-ph645080113.jpg" alt="Pug Full Body Shot" style="width:100%"></div>
+                        <div class="caption">
+                            <p>A fawn colored pug poses for the camera. (vetstreet.com)</p>
+                        </div>
+                    </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="https://vetstreet.brightspotcdn.com/dims4/default/cf95061/2147483647/crop/0x0%2B0%2B0/resize/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F36%2Fcfde50a7fa11e0a0d50050568d634f%2Ffile%2FPug-3-645mk062811.jpg" alt="Pug Dog 2" style="width:100%"></div>
+                        <div class="caption">
+                            <p>Although pugs aren't terribly keen on exercise, pugs like this one love going outside. (vetstreet.com)</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <br>
+        <center><h3>Information About Pugs</h3></center>
+        <br>
+        <center>
+            <div class="container" style="padding-top:10px;padding-bottom:10px" id="section4">
+            <button data-toggle="collapse" data-target="#demo">All About Pugs</button>
+            <div id="demo" class="collapse" style="background-color: lightyellow;">
+            Pug dogs are the whole package; cute and sociable with a fun loving personality, they make great companions and lovable pets. They were brought to Europe from China in the 1500s and became very popular. Pugs have glossy coats that come in many colors, the most common ones being fawn or black. Their wrinkled faces and curly tails make them extra cute and lovable! On top of their easy appearance, pugs have unique personalities and are known for being social and gentle dogs.
+            </div>
+            </div>
+        </center>
+        <br>
+        <center><h3>Image Carousel</h3></center>
+        <br>
+        <div class="container"  id="section5">
+        <div id="demo" class="carousel slide" data-ride="carousel" style="padding-top:70px;padding-bottom:70px">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://canna-pet.com/wp-content/uploads/2017/07/pug-375461_1920-e1501625344592.jpg" alt="Black Pug Picture">
+                    <div class="carousel-caption" style="background-color:black;">
+                        <h2>Black Pug!</h2>
+                        <p>Black pugs are exceptionally adorable!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.shopify.com/s/files/1/1133/5028/files/pug-nose-problems.jpg?v=1485553246" alt="Fawn Pug Licks Its Nose">
+                    <div class="carousel-caption" style="background-color:black;">
+                        <h2>Silly Pug!</h2>
+                        <p>A fawn pug licks its nose- so cute!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/pugs-in-a-blanket.png?itok=q_boRGZa&resize=1100x619" alt="Pugs in a Blanket">
+                    <div class="carousel-caption" style="background-color:black;">
+                        <h2>Pugs in a Blanket</h2>
+                        <p>What could be cuter?</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        </div>
+        <br>
+    </body>
+</html>
